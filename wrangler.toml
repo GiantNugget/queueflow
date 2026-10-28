@@ -1,0 +1,13 @@
+name = "queueflow"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "queueflow-db"
+database_id = "0da31d6f-0767-4a1e-826b-0986fe87000f"
